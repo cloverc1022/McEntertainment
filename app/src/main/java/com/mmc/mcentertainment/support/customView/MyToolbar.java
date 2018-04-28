@@ -42,6 +42,13 @@ public class MyToolbar extends Toolbar {
         img_tittle = findViewById(R.id.img_tittle);
     }
 
+    public void registerClickListener(OnClickListener listener){
+        img_left.setOnClickListener(listener);
+        btn_left.setOnClickListener(listener);
+        img_right.setOnClickListener(listener);
+        btn_right.setOnClickListener(listener);
+    }
+
     public RelativeLayout getToolbarContent() {
         return toolbar_content;
     }
